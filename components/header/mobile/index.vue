@@ -42,6 +42,7 @@ import SidePanel from "./sidepanel"
 </script>
 
 <style lang="scss" scoped>
+   
   .page-container {
     min-height: 300px;
     overflow: hidden;
