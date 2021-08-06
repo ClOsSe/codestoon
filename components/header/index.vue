@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="md-xsmal-hide">
+        <div class="md-small-hide md-large ">
             <Desktop />
         </div>
-        <div class="md-xlarge-hide md-large-hide">
+        <div class="md-large-hide header-mobile">
             <Mobile />
         </div>
 
@@ -19,3 +19,11 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+@media only screen and (max-width: 960px) {
+  .header-mobile{
+      display: block !important;
+  }
+
+}
+</style>
