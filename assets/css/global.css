@@ -1,2 +1,7 @@
 @import '../scss/variable.scss';
-@import '../fonts/font-face.css'
+@import '../fonts/font-face.css';
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
