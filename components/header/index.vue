@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div dir="rtl">
         <div class="md-small-hide md-large ">
             <Desktop />
         </div>
