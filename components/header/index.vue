@@ -20,10 +20,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media (min-width: 601px){
+  .header-mobile{
+      display: none !important;
+  }
+}
 @media (min-width: 0px) and (max-width: 600px) {
   .header-mobile{
       display: unset !important;
   }
-
 }
 </style>

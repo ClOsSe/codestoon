@@ -1,6 +1,7 @@
 <template>
     <div class="row-with-title">
         <div class="picture-and-info-box">
+            <!-- TODO picture for screen with width > 2000 is not responsive -->
             <img src="/fold1-img.jpg" alt="">
         </div>
         <div class="info-box">
