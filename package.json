@@ -15,7 +15,9 @@
     "nuxt-material-design-icons": "^1.0.4",
     "vue-material": "^1.0.0-beta-15"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.1"
+  },
   "babel": {
     "presets": [
       "./node_modules/@rails/webpacker/package/babel/preset.js"
