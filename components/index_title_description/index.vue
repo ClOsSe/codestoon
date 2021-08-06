@@ -96,4 +96,27 @@ export default {
         }
     }
 }
+@media  (max-width:768px){
+    .info-box{
+        width: 100% !important;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        .card{
+            position: relative;
+            top: 2% !important;
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font-size: 16px;
+                font-family: vazir_thin !important;
+            }
+            .search{
+                .search-input{
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+}
 </style>
