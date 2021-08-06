@@ -1,0 +1,41 @@
+@font-face {
+  font-family: vazir_regular;
+  src: url('Vazir-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: vazir_bold;
+  src: url('Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: vazir_thin;
+  src: url('Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: vazir_light;
+  src: url('Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: vazir_medium;
+  src: url('Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: vazir_black;
+  src: url('Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display:swap;
+}
