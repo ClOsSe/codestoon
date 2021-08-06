@@ -1,6 +1,6 @@
 <template>
     <div dir="rtl">
-        <div class="md-small-hide md-large ">
+        <div class="md-xsmall-hide md-large ">
             <Desktop />
         </div>
         <div class="md-large-hide header-mobile">
@@ -20,9 +20,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@media only screen and (max-width: 960px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .header-mobile{
-      display: block !important;
+      display: unset !important;
   }
 
 }

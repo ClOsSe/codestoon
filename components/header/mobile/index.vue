@@ -2,7 +2,7 @@
   <div class="md-layout-column">
       <!-- menu header -->
     <md-toolbar class="md-default">
-      <md-button class="md-icon-button" @click="showNavigation = true">
+      <md-button class="md-icon-button" @click="showNavigation = !showNavigation">
         <md-icon>menu</md-icon>
       </md-button>
 
@@ -11,7 +11,7 @@
       </div>
     </md-toolbar>
     <!-- side panel -->
-    <md-drawer class="" dir="rtl" md-permanent="full" md-persistent="full"  md-right md-swipeable  :md-active.sync="showNavigation">
+    <md-drawer class="" dir="rtl" md-permanent="full"  md-right md-swipeable  :md-active.sync="showNavigation">
       <md-toolbar class="card-side-panel md-transparent md-layout md-gutter md-alignment-center-center" md-elevation="0">
             <md-avatar class="md-avatar-icon md-large ">
                 <img class="center user-avatar" src="/user_avatar.jpg" alt="logo">
@@ -35,9 +35,11 @@ import SidePanel from "./sidepanel"
           SidePanel
       },
     name: 'Temporary',
-    data: () => ({
-      showNavigation: false,
-    })
+    data(){
+      return{
+        showNavigation: false,
+      }
+    }
   }
 </script>
 
