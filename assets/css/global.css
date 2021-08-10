@@ -8,6 +8,9 @@
 .width-100{
     width: 100%;
 }
+.vazir-light{
+    font-family: vazir_light;
+}
 input::placeholder{
     font-family: 'vazir_light' !important;
 }
