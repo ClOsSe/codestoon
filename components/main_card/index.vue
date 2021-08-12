@@ -1,6 +1,6 @@
 <template>
     <div dir="rtl" class="card row col-12">
-        <md-card md-with-hover>
+        <md-card md-with-hover class="col-12">
             <div class="category-picture">
                 <div class="box-cover">
                 <img :src="course.imageUrl" :alt="course.title">
@@ -43,11 +43,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card{
-    // width: 300px;
-    // max-height: 520px ;
-    // border-top-left-radius: 20px;
-    // border-top-right-radius: 20px;
-    // padding: 20px;
+    width: 100% !important;
     border-radius: 20px;
     box-shadow: 0px 0px 10px gray;
     overflow: hidden;
@@ -55,7 +51,7 @@ export default {
         padding: 0;
         width: 100%;
         .box-cover{
-            // max-width: 300px;
+            width: 100%;
             max-height: 300px;
             img{
                 margin-right: 0px;
