@@ -12,8 +12,50 @@
 .vazir-light{
     font-family: vazir_light;
 }
+.vazir-medium{
+    font-family: vazir_medium;
+}
+.vazir-black{
+    font-family:vazir_black;
+}
 .background-lemon{
     background-color: #e6edfc;
+}
+.text-h1{
+    font-size: 10px;
+}
+.text-h2{
+    font-size: 11px;
+}
+.text-h3{
+    font-size: 12px;
+}
+.text-h4{
+    font-size: 13px;
+}
+.text-h5{
+    font-size: 14px;
+}
+.text-h6{
+    font-size: 15px;
+}
+.text-h7{
+    font-size: 16px;
+}
+.text-h8{
+    font-size: 18px;
+}
+.text-h9{
+    font-size: 20px;
+}
+.text-h10{
+    font-size: 22px;
+}
+.text-h11{
+    font-size: 24px;
+}
+.text-h12{
+    font-size: 26px;
 }
 
 input::placeholder{
