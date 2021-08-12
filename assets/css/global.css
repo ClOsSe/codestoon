@@ -1,5 +1,6 @@
 @import '../scss/variable.scss';
 @import '../fonts/font-face.css';
+@import './responsive.css';
 .center{
     display: flex;
     align-items: center;
