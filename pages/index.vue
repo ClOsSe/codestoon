@@ -34,6 +34,26 @@
         <ShowMore routeName="courses"></ShowMore>
       </div>
     </div>
+    <!-- the play sec -->
+    <div class="plans">
+      <div class="row col-12 center">
+        <Title class="text-h5" Title="پلنی رو انتخاب کنید که مناسب نیازتون باشه" />
+        <div class="col-4 text-center">
+          <p class="vazir-light plans-description">با خرید یکی از این پلن ها تنها در چند دقیقه از تمامی امکانات سایت بهرمند شوید </p>
+        </div>
+      </div>
+      <div class="row col-12 center">
+        <div class="center col-3">
+          <Plan :planInfo="planInfo[0]"></Plan>
+        </div>
+        <div class="center col-3">
+          <Plan :planInfo="planInfo[1]"></Plan>
+        </div>
+        <div class="center col-3">
+          <Plan :planInfo="planInfo[2]"></Plan>
+        </div>
+      </div>
+    </div>
 
 
   </div>
@@ -41,13 +61,15 @@
 
 <script>
 import Title from "../components/title"
-import TitleDescription from "../components/index_title_description/index.vue"
-import Card from "../components/main_card/index.vue"
+import TitleDescription from "../components/index_title_description"
+import Card from "../components/main_card"
+import Plan from "../components/plan_card"
 export default {
   components:{
     TitleDescription,
     Card,
     Title,
+    Plan,
     
   },
   data(){
@@ -164,6 +186,35 @@ export default {
           isCourse:false,
         }
       ],
+      planInfo:[
+        {
+          title:'ماهانه',
+          unit:'تومان',
+          price:150000,
+          description:'این یک توضیح کوتاه در مورد پلن های فروشی می باشد این یک توضیح کوتاه در مورد پلن های فروشی می باشد این یک توضیح کوتاه در مورد پلن های فروشی می باشد',
+          isRecomended:false,
+          image:'/plan.svg',
+          link:'/',
+        },
+        {
+          title:'اشتراک ویژه',
+          unit:'تومان',
+          price:500000,
+          description:'این یک توضیح کوتاه در مورد پلن های فروشی می باشد این یک توضیح کوتاه در مورد پلن های فروشی می باشد این یک توضیح کوتاه در مورد پلن های فروشی می باشد',
+          isRecomended:true,
+          image:'/vip.svg',
+          link:'/',
+        },
+        {
+          title:'سالیانه',
+          unit:'تومان',
+          price:1440000,
+          description:'این یک توضیح کوتاه در مورد پلن های فروشی می باشد این یک توضیح کوتاه در مورد پلن های فروشی می باشد این یک توضیح کوتاه در مورد پلن های فروشی می باشد',
+          isRecomended:false,
+          image:'/plan1.svg',
+          link:'/',
+        },
+      ]
     }
   }
 }
@@ -174,6 +225,18 @@ export default {
   span{
     padding: 20px;
   }
+  
 }
+.plans{
+    text-align:justify;
+    
+    .plans-description{
+      padding: 2px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      color: gray;
+    }
+  }
+
 
 </style>
