@@ -12,6 +12,10 @@
 .vazir-light{
     font-family: vazir_light;
 }
+.background-light{
+    background-color: #e6edfc;
+}
+
 input::placeholder{
     font-family: 'vazir_light' !important;
 }
