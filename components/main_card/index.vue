@@ -1,9 +1,9 @@
 <template>
     <div dir="rtl" class="card row col-12">
         <md-card md-with-hover class="col-12">
-            <div v-if="course.imageUrl" class="category-picture">
+            <div v-if="cardInfo.imageUrl" class="category-picture">
                 <div class="box-cover">
-                <img :src="course.imageUrl" :alt="course.title">
+                <img :src="cardInfo.imageUrl" :alt="cardInfo.title">
                 </div>
             </div>
 
@@ -12,31 +12,31 @@
 
               <!-- <md-card-header > -->
                 <div class="md-title title">
-                    <h2 v-if="course.title">{{ course.title }}</h2>
+                    <h2 v-if="cardInfo.title">{{ cardInfo.title }}</h2>
                 </div>
                 <div class="md-subhead md-layout md-gutter sub-title">
                     <md-icon style="margin:5px;margin-right:20px" align="right" class="icon  md-alignment-center-right">watch_later</md-icon>
-                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right" v-if="course.lenght" >{{ course.lenght }}</p>
+                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right" v-if="cardInfo.lenght" >{{ cardInfo.lenght }}</p>
                     <div class="" style="margin:auto"></div>
                     <md-icon style="margin:5px;margin-left:0px"  class="icon md-alignment-center-right">check</md-icon>
-                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right" v-if="course.topics">{{ course.topics }}</p>
+                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right" v-if="cardInfo.topics">{{ cardInfo.topics }}</p>
                 </div>
               <!-- </md-card-header> -->
-
-              <!-- <md-card-content class="card-content"> -->
-                <p v-if="course.shortDescription">{{course.shortDescription}}</p>
+                <!-- description -->
+                <p v-if="cardInfo.shortDescription">{{cardInfo.shortDescription}}</p>
               </md-card-content>
-
-              <md-card-actions class="card-action">
-                <md-button class="md-primary md-dense md-raised">خرید</md-button>
+                <!-- action -->
+              <md-card-actions v-if="cardInfo.isCourse" class="card-action">
+                <md-button class="md-primary md-dense md-raised col-11">خرید</md-button>
               </md-card-actions>
+              
             </md-ripple>
         </md-card>
     </div>
 </template>
 <script>
 export default {
-    props:['course'],
+    props:['cardInfo'],
     mounted(){
     }
 }
@@ -86,6 +86,7 @@ export default {
     }
     .card-action{
             font-family: vazir_light;
+            justify-content: center !important;
     }
 }
 </style>

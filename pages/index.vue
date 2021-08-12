@@ -5,18 +5,18 @@
       <TitleDescription />
     </div>
     <!-- sec fold show category -->
-    <div>
+    <div class="background-lemon">
       <div class="row col-12">
       <Title Title="دسته‌بندی‌ها" />
       </div>
       <div>
         <div class="category center row col-12">
           <span class="col-4"  v-for="(item , index) in category" :key="index">
-            <Card class="" :course="item"/>
+            <Card class="" :cardInfo="item"/>
           </span>
         </div>
         <div>
-          <ShowMore :routeName="routeName"></ShowMore>
+          <ShowMore routeName="category"></ShowMore>
         </div>
       </div>
     </div>
@@ -27,11 +27,11 @@
       </div>
       <div class="category center row col-12">
         <span class="col-4"  v-for="(item , index) in courses" :key="index">
-          <Card class="" :course="item"/>
+          <Card class="" :cardInfo="item"/>
         </span>
       </div>
       <div>
-        <ShowMore :routeName="routeName"></ShowMore>
+        <ShowMore routeName="courses"></ShowMore>
       </div>
     </div>
 
@@ -59,7 +59,8 @@ export default {
           title:'آموزش 0 تا 100 php',
           lenght:'120',
           topics:'50',
-          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره php را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید'
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره php را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          isCourse:true,
         },
         { 
           id:1,
@@ -67,7 +68,8 @@ export default {
           title:'آموزش 0 تا 100 python',
           lenght:'90',
           topics:'20',
-          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره python را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید'
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره python را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          isCourse:true,
         },
         { 
           id:2,
@@ -75,7 +77,8 @@ export default {
           title:'آموزش 0 تا 100 TypeScript',
           lenght:'120',
           topics:'50',
-          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره TypeScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید'
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره TypeScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          isCourse:true,
         },
         { 
           id:3,
@@ -83,7 +86,8 @@ export default {
           title:'آموزش 0 تا 100 JavaScript',
           lenght:'120',
           topics:'50',
-          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره JavaScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید'
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره JavaScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          isCourse:true,
         },
         { 
           id:4,
@@ -91,7 +95,8 @@ export default {
           title:'آموزش 0 تا 100 quasar',
           lenght:'120',
           topics:'50',
-          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره quasar را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید'
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره quasar را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          isCourse:true,
         },
         { 
           id:5,
@@ -99,7 +104,8 @@ export default {
           title:'آموزش 0 تا 100 vue',
           lenght:'120',
           topics:'50',
-          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید'
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          isCourse:true,
         }
       ],
       category:[
@@ -109,7 +115,8 @@ export default {
           title:'برنامه نویسی وب فرانت-اند',
           lenght:'500',
           topics:'220',
-          shortDescription:''
+          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          isCourse:false,
         },
         { 
           id:1,
@@ -117,7 +124,8 @@ export default {
           title:'برنامه نویسی وب بک-اند',
           lenght:'90',
           topics:'20',
-          shortDescription:''
+          shortDescription:'تمامی دوره های مربوط به طراحی هویت بصری و فرانت سایت را در این قسمت پیدا کنید',
+          isCourse:false,
         },
         { 
           id:2,
@@ -125,35 +133,37 @@ export default {
           title:'برنامه نوسی موبایل - جاوا',
           lenght:'120',
           topics:'50',
-          shortDescription:''
+          shortDescription:'تمامی دوره های مربوط به اپلیکیشن های موبایل با زبان جاوا را در این قسمت پیدا کنید',
+          isCourse:false,
         },
         { 
           id:3,
           imageUrl:'/database.jpg',
           title:'بانک های اطلاعاتی',
-          lenght:'120',
-          topics:'50',
-          shortDescription:''
+          lenght:'500',
+          topics:'160',
+          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه را در این قسمت پیدا کنید',
+          isCourse:false,
         },
         { 
           id:4,
           imageUrl:'/os.png',
           title:'سیستم عامل',
-          lenght:'120',
-          topics:'50',
-          shortDescription:''
+          lenght:'60',
+          topics:'15',
+          shortDescription:'تمامی دوره های مربوط به سیستم عامل را در این قسمت پیدا کنید',
+          isCourse:false,
         },
         { 
           id:5,
           imageUrl:'/security.jpg',
           title:'امنیت',
-          lenght:'120',
-          topics:'50',
-          shortDescription:''
+          lenght:'50',
+          topics:'10',
+          shortDescription:'تمامی دوره های مربوط به امنیت را در این قسمت پیدا کنید',
+          isCourse:false,
         }
       ],
-      routeName:'showAllCourses',
-      
     }
   }
 }
