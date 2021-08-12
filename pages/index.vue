@@ -11,9 +11,9 @@
       </div>
       <div>
         <div class="category center row col-12">
-          <span class="col-4"  v-for="(item , index) in category" :key="index">
-            <Card class="" :cardInfo="item"/>
-          </span>
+          <div class="center col-4" v-for="(item , index) in category" :key="index">
+          <span><Card class="" :cardInfo="item"/></span>
+          </div>
         </div>
         <div>
           <ShowMore routeName="category"></ShowMore>
@@ -26,9 +26,9 @@
       <Title Title="دوره‌ها" />
       </div>
       <div class="category center row col-12">
-        <span class="col-4"  v-for="(item , index) in courses" :key="index">
-          <Card class="" :cardInfo="item"/>
-        </span>
+        <div class="center col-4" v-for="(item , index) in courses" :key="index">
+          <span><Card :cardInfo="item"/></span>
+        </div>
       </div>
       <div>
         <ShowMore routeName="courses"></ShowMore>
@@ -43,6 +43,7 @@
         </div>
       </div>
       <div class="row col-12 center">
+        <div class="center">
         <div class="center col-3">
           <Plan :planInfo="planInfo[0]"></Plan>
         </div>
@@ -51,6 +52,7 @@
         </div>
         <div class="center col-3">
           <Plan :planInfo="planInfo[2]"></Plan>
+        </div>
         </div>
       </div>
     </div>

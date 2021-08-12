@@ -48,6 +48,7 @@ export default {
     .card{
         border-radius: 17px;
         margin: 5px;
+        max-width: 320px;
         .title{
         padding-top: 5px;
         }

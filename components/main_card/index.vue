@@ -47,6 +47,7 @@ export default {
     border-radius: 20px;
     box-shadow: 0px 0px 10px gray;
     overflow: hidden;
+        max-width: 320px;
     .category-picture{
         padding: 0;
         width: 100%;
