@@ -22,40 +22,40 @@
     background-color: #e6edfc;
 }
 .text-h1{
-    font-size: 10px;
+    font-size: 10px !important;
 }
 .text-h2{
-    font-size: 11px;
+    font-size: 11px !important;
 }
 .text-h3{
-    font-size: 12px;
+    font-size: 12px !important;
 }
 .text-h4{
-    font-size: 13px;
+    font-size: 13px !important;
 }
 .text-h5{
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .text-h6{
-    font-size: 15px;
+    font-size: 15px !important;
 }
 .text-h7{
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .text-h8{
-    font-size: 18px;
+    font-size: 18px !important;
 }
 .text-h9{
-    font-size: 20px;
+    font-size: 20px !important;
 }
 .text-h10{
-    font-size: 22px;
+    font-size: 22px !important;
 }
 .text-h11{
-    font-size: 24px;
+    font-size: 24px !important;
 }
 .text-h12{
-    font-size: 26px;
+    font-size: 26px !important;
 }
 
 input::placeholder{
