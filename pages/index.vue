@@ -5,8 +5,8 @@
       <TitleDescription />
     </div>
     <!-- sec fold category -->
-    <div class="category center md-layout">
-      <span class="md-layout-item center"  v-for="(item , index) in category" :key="index">
+    <div class="category center row col-12">
+      <span class="col-4"  v-for="(item , index) in category" :key="index">
         <Category class="" :course="item"/>
       </span>
     </div>
@@ -86,12 +86,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .category{
-  max-width: 1560px;
   display: flex;
   span{
-    max-width: 30%;
-    padding: 10px;
-    margin: 50px;
+    padding: 20px;
   }
 }
 

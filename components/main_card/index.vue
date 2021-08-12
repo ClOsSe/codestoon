@@ -1,5 +1,5 @@
 <template>
-    <div dir="rtl" class="card">
+    <div dir="rtl" class="card row col-12">
         <md-card md-with-hover>
             <div class="category-picture">
                 <div class="box-cover">
@@ -38,23 +38,28 @@
 export default {
     props:['course'],
     mounted(){
-        console.log(this.course)
     }
 }
 </script>
 <style lang="scss" scoped>
 .card{
-    width: 300px;
-    max-height: 520px ;
+    // width: 300px;
+    // max-height: 520px ;
+    // border-top-left-radius: 20px;
+    // border-top-right-radius: 20px;
+    // padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
     .category-picture{
         padding: 0;
         width: 100%;
         .box-cover{
-            max-width: 300px;
+            // max-width: 300px;
             max-height: 300px;
             img{
                 margin-right: 0px;
-                width: 300px;
+                width: 100%;
                 height: 225px;
                 border :none;
                 border-radius: 0px;
