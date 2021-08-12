@@ -1,7 +1,7 @@
 <template>
     <div dir="rtl" class="card row col-12">
         <md-card md-with-hover class="col-12">
-            <div class="category-picture">
+            <div v-if="course.imageUrl" class="category-picture">
                 <div class="box-cover">
                 <img :src="course.imageUrl" :alt="course.title">
                 </div>
@@ -12,19 +12,19 @@
 
               <!-- <md-card-header > -->
                 <div class="md-title title">
-                    <h2>{{ course.title }}</h2>
+                    <h2 v-if="course.title">{{ course.title }}</h2>
                 </div>
                 <div class="md-subhead md-layout md-gutter sub-title">
                     <md-icon style="margin:5px;margin-right:20px" align="right" class="icon  md-alignment-center-right">watch_later</md-icon>
-                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right">{{ course.lenght }}</p>
+                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right" v-if="course.lenght" >{{ course.lenght }}</p>
                     <div class="" style="margin:auto"></div>
                     <md-icon style="margin:5px;margin-left:0px"  class="icon md-alignment-center-right">check</md-icon>
-                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right">{{ course.topics }}</p>
+                    <p style="margin:5px;margin-left:20px;margin-top:10px"  class="course-lenght md-alignment-center-right" v-if="course.topics">{{ course.topics }}</p>
                 </div>
               <!-- </md-card-header> -->
 
               <!-- <md-card-content class="card-content"> -->
-                <p>{{course.shortDescription}}</p>
+                <p v-if="course.shortDescription">{{course.shortDescription}}</p>
               </md-card-content>
 
               <md-card-actions class="card-action">
