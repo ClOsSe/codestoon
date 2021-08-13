@@ -32,7 +32,7 @@ export default {
         return{
             banner:{
                 IsBannerExist:true,
-                bannerSrc:'/banner.jpg',
+                bannerSrc:'/banner.png',
                 bannerAlt:'banner'
             },
         }

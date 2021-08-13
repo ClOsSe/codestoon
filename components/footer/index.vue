@@ -5,9 +5,8 @@
                 <div class="col-12 row center">
                 <h3 class="title text-center vazir-bold text-h12 col-6">برای دریافت آخرین اخبار و اطلاع از کدهای تخفیف در خبرنامه ما عضو شوید</h3>
                 </div>
-                <div class="center">
-                    <!-- FIXME:input tags is not working -->
-                    <Subscribe />
+                <div class="center row col-12">
+                    <Subscribe class="col-2"></Subscribe>
                 </div>
             </div>
         </div>

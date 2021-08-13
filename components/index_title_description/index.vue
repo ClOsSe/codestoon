@@ -57,6 +57,7 @@ export default {
             display: block;
             color: #ffff;
             opacity: 1;
+            line-height: normal;
             h1{
                 font-family: vazir_bold;
             }
@@ -64,8 +65,14 @@ export default {
                 font-family: vazir_medium;
             }
             .search{
+                background-color: rgb(251, 249, 249);
+                border-radius: 5px;
+                direction: rtl;
+                padding-right: 20px;
+                max-height: 10px;
+                padding-top: 5px;
                 .search-input{
-                    background-color:white;
+                    // background-color:white;
                     border-radius: 2px;
                     padding-right: 5px;
                 }
