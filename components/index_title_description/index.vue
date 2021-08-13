@@ -1,16 +1,18 @@
 <template>
-    <div class="row-with-title">
-        <div class="picture-and-info-box">
-            <!-- TODO picture for width > 2000 is not responsive -->
-            <img src="/fold1-img.jpg" alt="">
-        </div>
-        <div class="info-box">
-            <div class="card center">
-                <h1>کدستون</h1>
-                <p>این یک متن ساختگی برای توضیحات این سایت می‌باشد</p>
-                <md-field class="search">
-                  <md-input color="primary" class="search-input" placeholder="جستجو ..." v-model="search"></md-input>
-                </md-field>
+    <div class="center row col-12">
+        <div class="row-with-title center row col-12">
+            <div class="picture-and-info-box">
+                <!-- TODO picture for width > 2000 is not responsive -->
+                <img src="/fold1-img.jpg" alt="">
+            </div>
+            <div class="info-box">
+                <div class="card center">
+                    <h1>کدستون</h1>
+                    <p>این یک متن ساختگی برای توضیحات این سایت می‌باشد</p>
+                    <md-field class="search">
+                      <md-input color="primary" class="search-input" placeholder="جستجو ..." v-model="search"></md-input>
+                    </md-field>
+                </div>
             </div>
         </div>
     </div>
@@ -29,6 +31,7 @@ export default {
     width: 100%;
     overflow: hidden;
     position: relative;
+    max-width: 1600px;
     .pictire-and-info-box{
         display: flex;
         img{

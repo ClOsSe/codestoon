@@ -5,7 +5,7 @@
       <TitleDescription />
     </div>
     <!-- sec fold show category -->
-    <div class="background-lemon">
+    <div class="background-lemon center row col-12">
       <div class="row col-12">
       <Title Title="دسته‌بندی‌ها" />
       </div>
@@ -15,13 +15,13 @@
           <span><Card class="" :cardInfo="item"/></span>
           </div>
         </div>
-        <div>
+        <div class="row col-12">
           <ShowMore routeName="category"></ShowMore>
         </div>
       </div>
     </div>
     <!-- therd  fold show all courses -->
-    <div>
+    <div class="center row col-12">
       <div class="row col-12">
       <Title Title="دوره‌ها" />
       </div>
@@ -30,11 +30,12 @@
           <span><Card :cardInfo="item"/></span>
         </div>
       </div>
-      <div>
+      <div class="row col-12">
         <ShowMore routeName="courses"></ShowMore>
       </div>
     </div>
-    <!-- the play sec -->
+    <!-- the plan sec -->
+    <div class="center row col-12">
     <div class="plans">
       <div class="row col-12 center">
         <Title class="text-h5" Title="پلنی رو انتخاب کنید که مناسب نیازتون باشه" />
@@ -54,6 +55,23 @@
           <Plan :planInfo="planInfo[2]"></Plan>
         </div>
         </div>
+      </div>
+    </div>
+    </div>
+    <!-- the last articles -->
+    <div class="center row col-12">
+      <div class="row col-12 center">
+        <Title class="text-h5" Title="آخرین مقالات" />
+        <div class="row col-12 center">
+          <div class="category center row col-12">
+            <div class="center col-4" v-for="(item , index) in articles" :key="index">
+              <span><Card :cardInfo="item"/></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row col-12">
+        <ShowMore routeName="articles"></ShowMore>
       </div>
     </div>
 
@@ -216,6 +234,80 @@ export default {
           image:'/plan1.svg',
           link:'/',
         },
+      ],
+      articles:[
+         { 
+          id:0,
+          imageUrl:'/article1.png',
+          title:'نکاتی برای ساخت نمونه کار عالی',
+          shortDescription:`هنگام درخواست کار، شرکت‌ها نگاهی به نمونه کارهای شما دارند. حتی اگر به صورت فریلنسری هم کار می‌کنید مشتری شما دوست دارد قبل از آنکه کار خود را به شما بسپارد نمونه کارهایتان را ببیند. از این رو تمرکز بر نمونه کار و ایجاد کارهایی که شما را از بقیه متمایز سازد ضروری است.
+          در این مقاله می‌خواهیم برخی از نکات مهم برای ایجاد نمونه کارهای عالی را بیان کنیم.`,
+          isArticle:true,
+          tags:['روشهایی برای ساخت نمونه کار','نکاتی برای ساخت نمونه کار'],
+          countOfCumments:'20',
+          countOfLikes:'30',
+          coutOfViews:'50',
+        },
+         { 
+          id:2,
+          imageUrl:'/article1.png',
+          title:'نکاتی برای ساخت نمونه کار عالی',
+          shortDescription:`هنگام درخواست کار، شرکت‌ها نگاهی به نمونه کارهای شما دارند. حتی اگر به صورت فریلنسری هم کار می‌کنید مشتری شما دوست دارد قبل از آنکه کار خود را به شما بسپارد نمونه کارهایتان را ببیند. از این رو تمرکز بر نمونه کار و ایجاد کارهایی که شما را از بقیه متمایز سازد ضروری است.
+          در این مقاله می‌خواهیم برخی از نکات مهم برای ایجاد نمونه کارهای عالی را بیان کنیم.`,
+          isArticle:true,
+          tags:['روشهایی برای ساخت نمونه کار','نکاتی برای ساخت نمونه کار'],
+          countOfCumments:'20',
+          countOfLikes:'30',
+          coutOfViews:'50',
+        },
+         { 
+          id:3,
+          imageUrl:'/article1.png',
+          title:'نکاتی برای ساخت نمونه کار عالی',
+          shortDescription:`هنگام درخواست کار، شرکت‌ها نگاهی به نمونه کارهای شما دارند. حتی اگر به صورت فریلنسری هم کار می‌کنید مشتری شما دوست دارد قبل از آنکه کار خود را به شما بسپارد نمونه کارهایتان را ببیند. از این رو تمرکز بر نمونه کار و ایجاد کارهایی که شما را از بقیه متمایز سازد ضروری است.
+          در این مقاله می‌خواهیم برخی از نکات مهم برای ایجاد نمونه کارهای عالی را بیان کنیم.`,
+          isArticle:true,
+          tags:['روشهایی برای ساخت نمونه کار','نکاتی برای ساخت نمونه کار'],
+          countOfCumments:'20',
+          countOfLikes:'30',
+          coutOfViews:'50',
+        },
+         { 
+          id:4,
+          imageUrl:'/article1.png',
+          title:'نکاتی برای ساخت نمونه کار عالی',
+          shortDescription:`هنگام درخواست کار، شرکت‌ها نگاهی به نمونه کارهای شما دارند. حتی اگر به صورت فریلنسری هم کار می‌کنید مشتری شما دوست دارد قبل از آنکه کار خود را به شما بسپارد نمونه کارهایتان را ببیند. از این رو تمرکز بر نمونه کار و ایجاد کارهایی که شما را از بقیه متمایز سازد ضروری است.
+          در این مقاله می‌خواهیم برخی از نکات مهم برای ایجاد نمونه کارهای عالی را بیان کنیم.`,
+          isArticle:true,
+          tags:['روشهایی برای ساخت نمونه کار','نکاتی برای ساخت نمونه کار'],
+          countOfCumments:'20',
+          countOfLikes:'30',
+          coutOfViews:'50',
+        },
+         { 
+          id:5,
+          imageUrl:'/article1.png',
+          title:'نکاتی برای ساخت نمونه کار عالی',
+          shortDescription:`هنگام درخواست کار، شرکت‌ها نگاهی به نمونه کارهای شما دارند. حتی اگر به صورت فریلنسری هم کار می‌کنید مشتری شما دوست دارد قبل از آنکه کار خود را به شما بسپارد نمونه کارهایتان را ببیند. از این رو تمرکز بر نمونه کار و ایجاد کارهایی که شما را از بقیه متمایز سازد ضروری است.
+          در این مقاله می‌خواهیم برخی از نکات مهم برای ایجاد نمونه کارهای عالی را بیان کنیم.`,
+          isArticle:true,
+          tags:['روشهایی برای ساخت نمونه کار','نکاتی برای ساخت نمونه کار'],
+          countOfCumments:'20',
+          countOfLikes:'30',
+          coutOfViews:'50',
+        },
+         { 
+          id:6,
+          imageUrl:'/article1.png',
+          title:'نکاتی برای ساخت نمونه کار عالی',
+          shortDescription:`هنگام درخواست کار، شرکت‌ها نگاهی به نمونه کارهای شما دارند. حتی اگر به صورت فریلنسری هم کار می‌کنید مشتری شما دوست دارد قبل از آنکه کار خود را به شما بسپارد نمونه کارهایتان را ببیند. از این رو تمرکز بر نمونه کار و ایجاد کارهایی که شما را از بقیه متمایز سازد ضروری است.
+          در این مقاله می‌خواهیم برخی از نکات مهم برای ایجاد نمونه کارهای عالی را بیان کنیم.`,
+          isArticle:true,
+          tags:['روشهایی برای ساخت نمونه کار','نکاتی برای ساخت نمونه کار'],
+          countOfCumments:'20',
+          countOfLikes:'30',
+          coutOfViews:'50',
+        },
       ]
     }
   }
@@ -223,7 +315,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .category{
-  display: flex;
+  max-width: 1600px;
   span{
     padding: 20px;
   }
