@@ -65,6 +65,7 @@ export default {
         list-style:none;
         display: flex;
         li{
+            padding-top:15px;
             padding-right:10px;
             .nuxt-link{
                 color: $links !important;
