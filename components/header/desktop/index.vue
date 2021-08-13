@@ -7,7 +7,7 @@
         <!-- header -->
         <div class="header-menue md-layout">
             <div class="md-layout-item logo">
-                <img src="/favicon.ico" alt="logo">
+                <img src="/logo.png" alt="logo">
             </div>
             <div class="md-layout-item menu-item">
                 <ul>
@@ -43,9 +43,10 @@ export default {
 .banner{
     max-height: 70px;
     width: 100%;
-
+    z-index: 1;
 }
 .header-menue{
+    z-index: 1;
     position: relative;
     max-height: 67px;
     width: 100%;
@@ -68,7 +69,8 @@ export default {
             padding-top:15px;
             padding-right:10px;
             .nuxt-link{
-                color: $links !important;
+                color:rgb(251, 249, 249);
+                // color: $links !important;
                 font-family: vazir_light;
             }
         }
@@ -77,6 +79,7 @@ export default {
     .login-parent{
         margin-left: 20px;
         .login{
+            color:rgb(251, 249, 249);
             font-family: vazir_light;
             position:relative; 
             text-align: left;
