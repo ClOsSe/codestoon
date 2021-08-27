@@ -1,6 +1,6 @@
 <template>
     <div dir="rtl">
-        <div class="md-xsmall-hide md-large ">
+        <div class="md-xsmall-hide md-large " >
             <Desktop />
         </div>
         <div class="md-large-hide header-mobile">
