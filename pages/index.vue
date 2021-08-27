@@ -158,7 +158,7 @@ export default {
           lenght:'500',
           topics:'220',
           shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
-          isCourse:false,
+          isCategory:true,
         },
         { 
           id:1,
@@ -167,7 +167,7 @@ export default {
           lenght:'90',
           topics:'20',
           shortDescription:'تمامی دوره های مربوط به طراحی هویت بصری و فرانت سایت را در این قسمت پیدا کنید',
-          isCourse:false,
+          isCategory:true,
         },
         { 
           id:2,
@@ -176,7 +176,7 @@ export default {
           lenght:'120',
           topics:'50',
           shortDescription:'تمامی دوره های مربوط به اپلیکیشن های موبایل با زبان جاوا را در این قسمت پیدا کنید',
-          isCourse:false,
+          isCategory:true,
         },
         { 
           id:3,
@@ -185,7 +185,7 @@ export default {
           lenght:'500',
           topics:'160',
           shortDescription:'تمامی دوره های مربوط به طراحی پایگاه را در این قسمت پیدا کنید',
-          isCourse:false,
+          isCategory:true,
         },
         { 
           id:4,
@@ -194,7 +194,7 @@ export default {
           lenght:'60',
           topics:'15',
           shortDescription:'تمامی دوره های مربوط به سیستم عامل را در این قسمت پیدا کنید',
-          isCourse:false,
+          isCategory:true,
         },
         { 
           id:5,
@@ -203,7 +203,7 @@ export default {
           lenght:'50',
           topics:'10',
           shortDescription:'تمامی دوره های مربوط به امنیت را در این قسمت پیدا کنید',
-          isCourse:false,
+          isCategory:true,
         }
       ],
       planInfo:[

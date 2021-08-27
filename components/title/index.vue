@@ -16,7 +16,7 @@ export default {
     padding: 20px;
     margin: 25px;
     margin-top: 35px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: vazir_bold;
 }
 </style>

@@ -4,6 +4,12 @@
             <div class="picture-and-info-box">
                 <!-- TODO picture for width > 2000 is not responsive -->
                 <img src="/fold1-img3.jpg" alt="">
+                <!-- <picture class="display:block">
+                    <source media="min-width:760px" srcset="https://images.alphacoders.com/102/thumb-1920-1026345.jpg">
+                    <source media="max-width:760px" srcset="https://images.alphacoders.com/102/thumb-1920-1026345.jpg">
+                    <source media="max-width:480px" srcset="https://images.alphacoders.com/102/thumb-1920-1026345.jpg">
+                    <source media="max-width:360px" srcset="https://images.alphacoders.com/102/thumb-1920-1026345.jpg">
+                </picture> -->
             </div>
             <div class="main-title">
                 <h1 class="title-text vazir-medium">این یک متن هشت کلمه ای می باشد این یک متن هشت کلمه ای می باشد ;&nbsp;<span class="pointer blink">&nbsp;&nbsp;</span></h1>
@@ -37,10 +43,12 @@ export default {
     max-width: 1600px;
     .pictire-and-info-box{
         display: flex;
-        img{
-            position: absolute;
-            max-width: 100%;
-            object-fit: cover;
+        picture{
+            source{
+                position: absolute;
+                max-width: 100%;
+                object-fit: cover;
+            }
         }
     }
     .main-title{
