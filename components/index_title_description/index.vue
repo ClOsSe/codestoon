@@ -3,7 +3,10 @@
         <div class="row-with-title center row col-12">
             <div class="picture-and-info-box">
                 <!-- TODO picture for width > 2000 is not responsive -->
-                <img src="/fold1-img.jpg" alt="">
+                <img src="/fold1-img3.jpg" alt="">
+            </div>
+            <div class="main-title">
+                <h1 class="title-text vazir-medium">این یک متن هشت کلمه ای می باشد این یک متن هشت کلمه ای می باشد ;&nbsp;<span class="pointer blink">&nbsp;&nbsp;</span></h1>
             </div>
             <div class="info-box center">
                 <div class="card ">
@@ -38,6 +41,35 @@ export default {
             position: absolute;
             max-width: 100%;
             object-fit: cover;
+        }
+    }
+    .main-title{
+        position: absolute;
+        right: 10%;
+        max-width: 60%;
+        line-height: 1.4;
+        .title-text{
+            font-weight: 900 !important;
+            font-size: 2.5rem;
+            color:#ffff;
+            .pointer{
+                background-color:#ffff;   
+                font-size: 22px;
+            }
+            .blink {
+              animation: blink-animation 1s steps(5, start) infinite;
+              -webkit-animation: blink-animation 1s steps(5, start) infinite;
+            }
+            @keyframes blink-animation {
+              to {
+                visibility: hidden;
+              }
+            }
+            @-webkit-keyframes blink-animation {
+              to {
+                visibility: hidden;
+              }
+            }
         }
     }
     .info-box{

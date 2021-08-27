@@ -1,5 +1,5 @@
 <template>
-    <div class="row col-12 center title">
+    <div class="row col-12  title">
         <h2>{{Title}}</h2>
     </div>
 </template>
