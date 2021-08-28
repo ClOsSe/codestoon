@@ -103,6 +103,7 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره php را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
+          level:"ADVANCED",
         },
         { 
           id:1,
@@ -112,6 +113,8 @@ export default {
           topics:'20',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره python را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
+          level:"BIGINNER",
+
         },
         { 
           id:2,
@@ -121,6 +124,7 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره TypeScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
+          level:"ADVANCED",
         },
         { 
           id:3,
@@ -129,7 +133,8 @@ export default {
           lenght:'120',
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره JavaScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
-          isCourse:true,
+          isCourse:true, 
+          level:"INTERMEDIATE",
         },
         { 
           id:4,
@@ -139,6 +144,7 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره quasar را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
+          level:"ADVANCED",
         },
         { 
           id:5,
@@ -148,6 +154,8 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
+          level:"INTERMEDIATE",
+
         }
       ],
       category:[
