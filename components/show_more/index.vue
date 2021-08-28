@@ -11,7 +11,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.md-button{
+    width:150px ;
+    animation-name: width;
+    animation-duration: 4s;
+    }
 .md-button:hover{
     width:500px !important;
 }
