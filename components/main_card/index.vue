@@ -44,7 +44,9 @@
               <md-card-content v-if="cardInfo.tags">
                   <div class="row flex col-12 tags">
                       <div class="cneter tag-box" v-for="(item,index) in cardInfo.tags" :key="index">
-                          <p class="tag-item vazir-light"  ># {{item}}</p>
+                          <router-link to="/">
+                            <p class="tag-item mouse-cursor vazir-light"  >#  {{item}}</p>
+                        </router-link>
                       </div>
                   </div>
               </md-card-content>
@@ -74,109 +76,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.card{
-    cursor:auto;
-    width: 100% !important;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px gray;
-    overflow: hidden;
-    max-width: 320px;
-    .category-picture{
-        cursor:auto;
-        padding: 0;
-        width: 100%;
-        .box-cover{
-            width: 100%;
-            max-height: 300px;
-            min-height: 225px;
-            img{
-                margin-right: 0px;
-                width: 100%;
-                height: 225px;
-                border :none;
-                border-radius: 0px;
-                object-fit: contain;
-            }
-        }
-    }
-    .title{
-        direction: rtl;
-        text-align: right;
-        font-family: vazir_medium;
-        font-size: 12px;
-       a{
-           color: rgb(53, 69, 156);
-       } 
-    }
-    
-    .sub-title{
-        div{
-            direction: rtl;
-            display: flex;
-        }
-    }
-    .first-box{
-        cursor:auto;
-        background-color: #ffffff;
-        border-radius: 15px;
-        margin-top: -25px;
-        position: relative;
-        .card-content{
-            padding:20px;
-            max-height: 247px;
-            font-family: vazir_light;
-            text-align: justify;
-            p{
-                max-height: 85px;
-                overflow: hidden;
-            }
-            // .short-description{
-            //     display: inline-block;
-            //     width: 380px;
-            //     white-space: nowrap;
-            //     overflow: hidden !important;
-            //     text-overflow: ellipsis;
-            // }
-        }
-    }
-    
-    .card-action{
-            font-family: vazir_light;
-            justify-content: center !important;
-            .btn-bye{
-             font-size:19px ;
-            }
-    }
-    .tags{
-        padding: 5px;
-        .tag-item{
-            background-color: rgb(218, 218, 218);
-            margin:2px;
-            padding: 2px;
-        }
-    }
-    .article-info{
-        .article-infoCounts{
-            font-family: vazir-light;
-            padding-top: 2px;
-            margin-left: 15px;
-        }
-    }
-}
-.card:hover{
-    .box-cover{
-        width: 100%;
-        max-height: 300px;
-        img{
-            margin-right: 0px;
-            width: 100%;
-            height: 220px;
-            border :none;
-            border-radius: 0px;
-            object-fit: cover;
-            }
-        }
-}
+
 @media only screen  and (min-width: 1601px) {
   .card{
     cursor:auto;
@@ -196,7 +96,7 @@ export default {
             img{
                 margin-right: 0px;
                 width: 100%;
-                height: 305px;
+                height: 310px;
                 border :none;
                 border-radius: 0px;
                 object-fit: contain;
@@ -379,6 +279,16 @@ export default {
     }
     
 }
+.tag-box{
+    margin-top: 20px;
+    p{
+        font-size: 15px;
+        color:rgb(32, 30, 30) !important;
+    } 
+    router-link{
+    text-decoration: none;
+    }
+}
 .card:hover{
     .box-cover{
         width: 100%;
@@ -386,7 +296,7 @@ export default {
         img{
             margin-right: 0px;
             width: 100%;
-            height: 220px;
+            height: 405px;
             border :none;
             border-radius: 0px;
             object-fit: cover;
@@ -480,6 +390,16 @@ export default {
             padding-top: 2px;
             margin-left: 15px;
         }
+    }
+}
+.tag-box{
+    margin-top: 7px;
+    p{
+        font-size: 12px;
+        color:rgb(32, 30, 30) !important;
+    } 
+    router-link{
+    text-decoration: none;
     }
 }
 .card:hover{

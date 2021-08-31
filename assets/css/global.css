@@ -60,6 +60,9 @@
 .text-h12{
     font-size: 26px !important;
 }
+.mouse-cursor{
+    cursor: pointer;
+}
 
 input::placeholder{
     font-family: 'vazir_light' !important;
