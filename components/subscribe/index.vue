@@ -2,8 +2,8 @@
     <div>
         <md-field class="subscribe">
             <md-input color="primary" class="subscribe-input vazir-light" placeholder="ایمیل خود را وارد کنید" ></md-input>
-            <!-- <md-button class="md-raised btn">ارسال</md-button> -->
         </md-field>
+            <md-button class="md-raised btn ">عضویت</md-button>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -12,7 +12,7 @@ md-input{
 }
 .subscribe{
     background-color: rgb(251, 249, 249);
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     direction: rtl;
     padding-right: 20px;
     max-height: 10px;
@@ -21,10 +21,16 @@ md-input{
     .subscribe-input{
         border: none;
     }
-    .btn{
-        min-width: 130px;
-        font-family: vazir_light;
-        // background-color: rgba(94, 219, 21, 0.698));
-    }
+    
 }
+.btn{
+        width: 100%;
+        border-radius: 0px 0px 5px 5px;
+        padding: 0 !important;
+        margin:0 !important ;
+        margin-top: -25px !important;
+        font-family: vazir_light;
+        font-size: 17px;
+        background-color: rgba(21, 219, 209, 0.698) !important;
+    }
 </style>
