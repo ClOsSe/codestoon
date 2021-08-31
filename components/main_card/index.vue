@@ -50,7 +50,7 @@
               </md-card-content>
                 <!-- action -->
               <md-card-actions v-if="cardInfo.isCourse" class="card-action">
-                <md-button class="md-primary md-dense md-raised col-11">خرید</md-button>
+                <md-button class="btn-bye md-primary md-dense md-raised col-11">خرید</md-button>
               </md-card-actions>
               <!-- action for article -->
               <md-card-actions v-if="cardInfo.isArticle" class="card-action">
@@ -143,6 +143,9 @@ export default {
     .card-action{
             font-family: vazir_light;
             justify-content: center !important;
+            .btn-bye{
+             font-size:19px ;
+            }
     }
     .tags{
         padding: 5px;
@@ -461,6 +464,7 @@ export default {
     .card-action{
             font-family: vazir_light;
             justify-content: center !important;
+           
     }
     .tags{
         padding: 5px;
