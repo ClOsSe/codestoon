@@ -18,7 +18,7 @@
             </md-card-actions>
             
             <md-card-actions>
-                <div class="row col-12 center text-center vazir-light">
+                <div class="row col-12 center description text-center vazir-light">
                     <p>{{planInfo.description}}</p>
                 </div>
             </md-card-actions>
@@ -40,6 +40,66 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media only screen  and (min-width: 1601px){
+.box{
+    width: 100%;
+    .card-recomended{
+        border: 1px solid #448aff;
+    }
+    .card{
+        border-radius: 17px;
+        margin: 5px;
+        max-width: 390px;
+        .title{
+        padding-top: 5px;
+        font-size: 18px;
+        }
+        .price{
+            color:#448aff;
+            padding: 20px;
+            p{
+                padding: 10px;
+                font-size: 18px;
+            }
+            span{
+                font-size:15px
+            }
+        }
+        .cycle{
+            color:black;
+        }
+        .image{
+            img{
+                width: 185px;
+                height: 140px;;
+            }        
+        }
+        .action-recomended-true{
+            .button{
+                border-radius:20px;
+                font-size: 18px;
+            }
+        }
+        .action-recomended-false{
+            color:black;
+            .button{
+                font-size: 16px;
+            }
+        }
+        .action{
+            margin-top: 10px;
+        }
+        .description{
+            p{
+                font-size:16px;
+                line-height: 1.1;
+            }
+        }
+    }
+    
+}
+}
+@media only screen  and (max-width: 1600px){
 .box{
     width: 100%;
     .card-recomended{
@@ -90,4 +150,7 @@ export default {
     }
     
 }
+}
+
+
 </style>

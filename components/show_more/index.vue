@@ -1,7 +1,7 @@
 <template>
-    <div class="width-100 center vazir-light">
-        <router-link :to="routeName">
-            <md-button style="" @click="ShowMore()" class="md-primary md-button md-dense md-raised">نمایش بیشتر</md-button>
+    <div class="width-100  center vazir-light ">
+        <router-link  :to="routeName">
+            <md-button style="" @click="ShowMore()" class="md-primary  md-button md-dense md-raised">نمایش بیشتر</md-button>
         </router-link>
     </div>
 </template>
@@ -11,6 +11,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
+@media only screen  and (min-width: 1601px){
+    .md-button{font-size:19px !important}
+}
+@media only screen  and (max-width: 1600px){
+    .md-button{font-size:15px !important}
+}
+
 .md-button{
     width:150px ;
     animation-name: width;
