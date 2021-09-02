@@ -6,7 +6,7 @@
         </div>
         <!-- header -->
         <div class="cneter col-12 row">
-            <div class="header-menue md-layout" >
+            <div class="header-menue center md-layout" >
             <div class="md-layout-item logo">
                 <img src="/logo.png" alt="logo">
             </div>
@@ -19,10 +19,10 @@
                 </ul>
             </div>
             <div class="md-layout-item login-parent md-layout md-gutter md-alignment-center-right">
-                <div class="md-layout-item md-size-25">
+                <div class="md-layout-item  center md-size-25">
                     <md-button class="login md-dense md-default">ورود / ثبت‌نام</md-button>
                 </div>
-                    <Cart class="cart" />
+                    <Cart class="cart center" />
             </div>
             </div>
         </div>
@@ -66,8 +66,8 @@ export default {
     .logo{
         margin-right: 20px;
         padding: 5px;
-        max-height: 50px;
-        max-width: 50px;
+        max-height: 70px;
+        max-width: 70px;
         img{
             width: 100%;
         }
@@ -83,6 +83,7 @@ export default {
                 color:rgb(251, 249, 249);
                 // color: $links !important;
                 font-family: vazir_light;
+                font-size: 20px;
             }
         }
     }
@@ -94,9 +95,10 @@ export default {
             position:relative; 
             text-align: left;
             margin-left: 10px;
+            font-size: 20px;
         }
         .cart{
-            width: 24px;
+            width: 35px;
         }
     }
 }

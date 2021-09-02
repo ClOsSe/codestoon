@@ -1,7 +1,7 @@
 <template>
   <div dir="rtl">
     <!-- first fold image and title -->
-    <div style="margin-top:-50px;z-index:-1">
+    <div style="margin-top:-70px;z-index:-1">
       <TitleDescription />
     </div>
     <!-- sec fold show category -->
