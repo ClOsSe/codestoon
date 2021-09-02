@@ -1,11 +1,12 @@
 <template>
-    <div>
+    <div class="">
         <!-- banner -->
         <div v-if="banner.IsBannerExist">
             <img :src="banner.bannerSrc" class="banner" :alt="banner.bannerAlt">
         </div>
         <!-- header -->
-        <div class="header-menue md-layout">
+        <div class="cneter col-12 row">
+            <div class="header-menue md-layout" >
             <div class="md-layout-item logo">
                 <img src="/logo.png" alt="logo">
             </div>
@@ -22,6 +23,7 @@
                     <md-button class="login md-dense md-default">ورود / ثبت‌نام</md-button>
                 </div>
                     <Cart class="cart" />
+            </div>
             </div>
         </div>
 
@@ -57,7 +59,10 @@ export default {
     max-height: 67px;
     width: 100%;
     display: flex;
-    // overflow: hidden;
+    max-width: 1600px;
+    left:0;
+    right:0;
+    margin:auto;
     .logo{
         margin-right: 20px;
         padding: 5px;
