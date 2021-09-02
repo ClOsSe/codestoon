@@ -12,7 +12,9 @@
     "@babel/plugin-proposal-private-methods": "^7.14.5",
     "core-js": "^3.16.2",
     "nuxt": "^2.15.8",
-    "vue-material": "^1.0.0-beta-15"
+    "nuxt-material-design-icons": "^1.0.4",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-material-design-icons": "^4.12.1"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.2.1"

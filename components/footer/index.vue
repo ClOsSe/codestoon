@@ -44,9 +44,21 @@
                         اگر شما سعی دارید به صورت فردی برای بالا بردن مهارت های خود در جهت کسب و کار قصد دارید از آموزش آنلاین استفاده کنید : کدستون یکی از بهترین گزینه های شما خواهد بود . کافیست با مشاهده بیش از 10 ها ساعت ویدئویی که در سایت به صورت رایگان می باشد مهارت های خود را افزایش دهید.
                     </p>
                     <ul class="d-flex center row col-12">
-                    <li>mdi-</li>
-                    <li>telegram</li>
-                    <li>instagram</li>
+                        <li>
+                            <a href="" target="_blank">
+                                <whatsapp />
+                            </a>
+                        </li>
+                        <li class="telegram">
+                            <a href="" target="_blank">
+                                <telegram  />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <instagram  />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -105,6 +117,15 @@ export default {
             }
             ul>li{
                 padding: 5px;
+                margin-right: 15px;
+            }
+            ul{
+                a{
+                    color: white;
+                }
+                .telegram{
+                    transform: rotate(-40deg);
+                }
             }
             
         }
