@@ -1,3 +1,5 @@
+// first npm i vue-material-design-icons 
+// then import this file on nuxt config
 import Vue from 'vue';
 import MenuIcon from 'vue-material-design-icons/Menu.vue';
 import Whatsapp from 'vue-material-design-icons/Whatsapp.vue';
