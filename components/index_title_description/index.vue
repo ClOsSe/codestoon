@@ -3,7 +3,7 @@
         <div class="row-with-title center row col-12">
             <div class="picture-and-info-box">
                 <!-- TODO picture for width > 2000 is not responsive -->
-                <img src="/fold1-img3.jpg" alt="">
+                <img src="/2106257.png" alt="">
                 <!-- <picture class="display:block">
                     <source media="min-width:760px" srcset="https://images.alphacoders.com/102/thumb-1920-1026345.jpg">
                     <source media="max-width:760px" srcset="https://images.alphacoders.com/102/thumb-1920-1026345.jpg">
