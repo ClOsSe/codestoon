@@ -21,7 +21,7 @@
                 <div class="md-layout-item md-size-25">
                     <md-button class="login md-dense md-default">ورود / ثبت‌نام</md-button>
                 </div>
-                    <Cart  />
+                    <Cart class="cart" />
             </div>
         </div>
 
@@ -57,7 +57,7 @@ export default {
     max-height: 67px;
     width: 100%;
     display: flex;
-    overflow: hidden;
+    // overflow: hidden;
     .logo{
         margin-right: 20px;
         padding: 5px;
@@ -89,6 +89,9 @@ export default {
             position:relative; 
             text-align: left;
             margin-left: 10px;
+        }
+        .cart{
+            width: 24px;
         }
     }
 }
