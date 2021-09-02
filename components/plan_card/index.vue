@@ -49,20 +49,20 @@ export default {
     .card{
         border-radius: 17px;
         margin: 5px;
-        max-width: 390px;
+        max-width: 490px;
         .title{
-        padding-top: 5px;
-        font-size: 18px;
+        padding-top: 8px;
+        font-size: 22px;
         }
         .price{
             color:#448aff;
-            padding: 20px;
+            padding: 25px;
             p{
                 padding: 10px;
-                font-size: 18px;
+                font-size: 22px;
             }
             span{
-                font-size:15px
+                font-size:19px
             }
         }
         .cycle{
@@ -70,20 +70,22 @@ export default {
         }
         .image{
             img{
-                width: 185px;
-                height: 140px;;
+                width: 220px;
+                height: 175px;;
             }        
         }
         .action-recomended-true{
             .button{
                 border-radius:20px;
-                font-size: 18px;
+                font-size: 22px;
             }
         }
         .action-recomended-false{
             color:black;
+            font-family:vazir_light;
             .button{
-                font-size: 16px;
+                border-radius:20px;
+                font-size: 20px;
             }
         }
         .action{
@@ -91,8 +93,8 @@ export default {
         }
         .description{
             p{
-                font-size:16px;
-                line-height: 1.3;
+                font-size:22px;
+                line-height: 1.4;
             }
         }
     }
