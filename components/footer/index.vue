@@ -14,15 +14,27 @@
             <div class="row column-1 col-8">
                 <div dir="rtl" class="col-6">
                     <h4 class="center vazir-bold">آدرس‌ها</h4>
-                    <h4 class="center vazir-bold">ایمیل: {{email}}</h4>
-                    <h4 class="center vazir-bold">تلفن: {{cel}}</h4>
+                    <a :href="`mailto:${email}`" target="_blank">
+                        <h4 class="center vazir-bold">ایمیل: {{email}}</h4>
+                    </a>
+                    <a :href="`tel:${cel}`" target="_blank">
+                        <h4 class="center vazir-bold">تلفن: {{cel}}</h4>
+                    </a>
                     <h4 class="center vazir-bold">آدرس: {{address}}</h4>
                 </div>
                 <div class="col-6">
+                    <router-link to="ruls">
                     <h4 class="center vazir-bold">قوانین و مقررات</h4>
+                    </router-link>
+                    <router-link to="faq">
                     <h4 class="center vazir-bold">سوالات متداول</h4>
+                    </router-link>
+                    <router-link to="contact_us">
                     <h4 class="center vazir-bold">ارتباط با ما</h4>
+                    </router-link>
+                    <router-link to="about_us">
                     <h4 class="center vazir-bold">درباره ما</h4>
+                    </router-link>
                 </div>
             </div>
             <div dir="rtl" class="column-2 col-4">
@@ -32,7 +44,7 @@
                         اگر شما سعی دارید به صورت فردی برای بالا بردن مهارت های خود در جهت کسب و کار قصد دارید از آموزش آنلاین استفاده کنید : کدستون یکی از بهترین گزینه های شما خواهد بود . کافیست با مشاهده بیش از 10 ها ساعت ویدئویی که در سایت به صورت رایگان می باشد مهارت های خود را افزایش دهید.
                     </p>
                     <ul class="d-flex center row col-12">
-                    <li>whatsapp</li>
+                    <li>mdi-</li>
                     <li>telegram</li>
                     <li>instagram</li>
                     </ul>
