@@ -144,7 +144,7 @@ export default {
                 font-size: 24px;
                 // padding-top: 15px;
                 // max-height: 85px;
-                overflow: hidden;
+                // overflow: hidden;
             }
             .short-description{
                 font-size: 28px;
