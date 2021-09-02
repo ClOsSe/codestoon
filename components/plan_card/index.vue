@@ -92,7 +92,7 @@ export default {
         .description{
             p{
                 font-size:16px;
-                line-height: 1.1;
+                line-height: 1.3;
             }
         }
     }
