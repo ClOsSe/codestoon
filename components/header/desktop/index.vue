@@ -21,14 +21,20 @@
                 <div class="md-layout-item md-size-25">
                     <md-button class="login md-dense md-default">ورود / ثبت‌نام</md-button>
                 </div>
+                    <Cart  />
             </div>
         </div>
 
     </div>
 </template>
 <script>
+import Cart from '../cart'
 export default {
+    components:{
+        Cart
+    },
     data(){
+        
         return{
             banner:{
                 IsBannerExist:true,
@@ -74,7 +80,6 @@ export default {
                 font-family: vazir_light;
             }
         }
-        
     }
     .login-parent{
         margin-left: 20px;
@@ -83,11 +88,9 @@ export default {
             font-family: vazir_light;
             position:relative; 
             text-align: left;
-
+            margin-left: 10px;
         }
     }
-
-    
 }
 router-link{
     text-decoration: none;
