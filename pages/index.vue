@@ -104,6 +104,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره php را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
           level:"ADVANCED",
+          price:150000,
         },
         { 
           id:1,
@@ -114,7 +115,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره python را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
           level:"BIGINNER",
-
+          price:50000,
         },
         { 
           id:2,
@@ -125,6 +126,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره TypeScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
           level:"ADVANCED",
+          price:100000,
         },
         { 
           id:3,
@@ -135,6 +137,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره JavaScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true, 
           level:"INTERMEDIATE",
+          price:200000,
         },
         { 
           id:4,
@@ -145,6 +148,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره quasar را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
           level:"ADVANCED",
+          price:300000,
         },
         { 
           id:5,
@@ -155,7 +159,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
           level:"INTERMEDIATE",
-
+          price:200000,
         }
       ],
       category:[

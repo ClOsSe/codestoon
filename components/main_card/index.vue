@@ -39,6 +39,7 @@
                     {{cardInfo.level}}
                     </p>
                 </div>
+                    <p v-if="cardInfo.isCourse" class="course-price">قیمت : {{cardInfo.price}} تومان</p>
               </md-card-content>
               <!-- tags if its article this row will display -->
               <md-card-content v-if="cardInfo.tags">
@@ -52,7 +53,7 @@
               </md-card-content>
                 <!-- action -->
               <md-card-actions v-if="cardInfo.isCourse" class="card-action">
-                <md-button class="btn-bye md-primary md-dense md-raised col-11">خرید</md-button>
+                <md-button class="md-button btn-bye md-primary md-dense md-raised col-11">خرید</md-button>
               </md-card-actions>
               <!-- action for article -->
               <md-card-actions v-if="cardInfo.isArticle" class="card-action">
@@ -136,7 +137,7 @@ export default {
         .card-content{
             padding:20px;
             padding-top: 25px;
-            max-height: 347px;
+            max-height: 357px;
             font-family: vazir_light;
             text-align: justify;
             p{
@@ -157,16 +158,19 @@ export default {
             }
             .course-level{
                 // min-width:12px;
-                // min-height:20px;
+                min-height:70px;
                 // padding:20px;
                 position: absolute;
                 display: flex;
-                    padding-left:30px;
+                padding-left:30px;
                 .level{
                     position: relative;
                     margin-left:50px;
-                    margin-top: -7px;
+                    margin-top: 5px;
                 }
+            }
+            .course-price{
+                min-height:70px;
             }
             .course-level-biginner{
                 direction: ltr;
@@ -179,17 +183,14 @@ export default {
                     border-radius: 2px;
                 }
                 #one{
-                    margin-top: -10px;
                     background-color: rgb(36, 197, 36);
                     margin-left:5px;
                 }
                 #tow{
-                    margin-top: -10px;
                     background-color: rgb(84, 148, 84);
                     margin-left:20px;
                 }
                 #three{
-                    margin-top: -10px;
                     background-color: gray;
                     margin-left:35px;
                 }
@@ -207,17 +208,14 @@ export default {
                 #one{
                     background-color: rgb(15, 127, 202);
                     margin-left:5px;
-                    margin-top: -10px;
                 }
                 #tow{
                     background-color: rgb(75, 149, 199);
                     margin-left:20px;
-                    margin-top: -10px;
                 }
                 #three{
                     background-color: gray;
                     margin-left:35px;
-                    margin-top: -10px;
                 }
                 
             }
@@ -234,17 +232,14 @@ export default {
                 #one{
                     background-color:#ee6d93;
                     margin-left:5px;
-                    margin-top: -10px;
                 }
                 #tow{
                     background-color:#ee6d93;
                     margin-left:20px;
-                    margin-top: -10px;
                 }
                 #three{
                     background-color:#ee6d93;
                     margin-left:35px;
-                    margin-top: -10px;
                 }
             }
 
@@ -261,6 +256,9 @@ export default {
     .card-action{
             font-family: vazir_light;
             justify-content: center !important;
+            .md-button{
+                font-size: 20px;
+            }
     }
     .tags{
         padding: 5px;
@@ -354,12 +352,98 @@ export default {
         position: relative;
         .card-content{
             padding:20px;
-            max-height: 247px;
+            max-height: 217px;
             font-family: vazir_light;
             text-align: justify;
             p{
                 max-height: 85px;
                 overflow: hidden;
+            }
+            .course-level{
+                position: absolute;
+                display: flex;
+                padding-left:30px;
+                padding-top:15px;
+                .level{
+                    position: relative;
+                    margin-left:37px;
+                    margin-top: 0px;
+                }
+            }
+            .course-price{
+                min-height:70px;
+                padding-top:10px;
+
+            }
+            .course-level-biginner{
+                direction: ltr;
+                text-align: left;
+                span{
+                    min-width:8px;
+                    min-height:18px;
+                    margin-bottom:5px;
+                    position: absolute;
+                    border-radius: 2px;
+                }
+                #one{
+                    background-color: rgb(36, 197, 36);
+                    margin-left:5px;
+                }
+                #tow{
+                    background-color: rgb(84, 148, 84);
+                    margin-left:15px;
+                }
+                #three{
+                    background-color: gray;
+                    margin-left:25px;
+                }
+            }
+            .course-level-intermediate{
+                    direction: ltr;
+                    text-align: left;
+                span{
+                    min-width:8px;
+                    min-height:18px;
+                    margin-bottom:5px;
+                    position: absolute;
+                    border-radius: 2px;
+                }
+                #one{
+                    background-color: rgb(15, 127, 202);
+                    margin-left:5px;
+                }
+                #tow{
+                    background-color: rgb(75, 149, 199);
+                    margin-left:15px;
+                }
+                #three{
+                    background-color: gray;
+                    margin-left:25px;
+                }
+                
+            }
+            .course-level-advanced{
+                direction: ltr;
+                text-align: left;
+                span{
+                    min-width:8px;
+                    min-height:18px;
+                    margin-bottom:5px;
+                    position: absolute;
+                    border-radius: 2px;
+                }
+                #one{
+                    background-color:#ee6d93;
+                    margin-left:5px;
+                }
+                #tow{
+                    background-color:#ee6d93;
+                    margin-left:15px;
+                }
+                #three{
+                    background-color:#ee6d93;
+                    margin-left:25px;
+                }
             }
             // .short-description{
             //     display: inline-block;

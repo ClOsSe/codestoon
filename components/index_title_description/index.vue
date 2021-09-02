@@ -107,7 +107,7 @@ export default {
                 direction: rtl;
                 padding-right: 20px;
                 max-height: 10px;
-                padding-top: 5px;
+                padding-top: 0px;
                 .search-input{
                     // background-color:white;
                     border-radius: 2px;
