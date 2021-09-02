@@ -6,8 +6,10 @@
     </div>
     <!-- sec fold show category -->
     <div class="background-lemon center row col-12">
-      <div class="row col-12">
-      <Title Title="دسته‌بندی‌ها" />
+      <div class="row col-12" >
+        <div class="center col-12 row">
+          <Title  Title="دسته‌بندی‌ها" />
+        </div>
       </div>
       <div>
         <div class="category center row col-12">
@@ -23,7 +25,9 @@
     <!-- therd  fold show all courses -->
     <div class="center row col-12">
       <div class="row col-12">
-      <Title Title="دوره‌ها" />
+        <div class="center col-12 row">
+          <Title Title="دوره‌ها" />
+        </div>
       </div>
       <div class="category center row col-12">
         <div class="center col-4" v-for="(item , index) in courses" :key="index">
@@ -38,7 +42,9 @@
     <div class="center row col-12">
     <div class="plans">
       <div class="row col-12 center">
-        <Title class="text-h5" Title="پلنی رو انتخاب کنید که مناسب نیازتون باشه" />
+        <div class="center col-12 row">
+          <Title class="text-h5" Title="پلنی رو انتخاب کنید که مناسب نیازتون باشه" />
+        </div>
         <div class="col-4 text-center">
           <p class="vazir-light plans-description">با خرید یکی از این پلن ها تنها در چند دقیقه از تمامی امکانات سایت بهرمند شوید </p>
         </div>
@@ -159,7 +165,7 @@ export default {
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
           level:"INTERMEDIATE",
-          price:200000,
+          price:300000,
         }
       ],
       category:[
@@ -343,6 +349,8 @@ export default {
       color: gray;
     }
   }
-
+Title{
+  max-width:1600px
+}
 
 </style>

@@ -18,5 +18,7 @@ export default {
     margin-top: 35px;
     font-size: 20px;
     font-family: vazir_bold;
+    max-width: 1600px !important;
+
 }
 </style>
