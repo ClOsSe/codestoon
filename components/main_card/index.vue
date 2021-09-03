@@ -507,4 +507,209 @@ export default {
         }
 }
 }
+@media (min-width: 600px) and (max-width:768px){
+   .card{
+    cursor:auto;
+    width: 100% !important;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
+    max-width: 260px !important;
+    .category-picture{
+        cursor:auto;
+        padding: 0;
+        width: 100%;
+        .box-cover{
+            width: 100%;
+            max-height: 230px ;
+            min-height: 155px ;
+            img{
+                margin-right: 0px;
+                width: 100%;
+                height: 175px;
+                border :none;
+                border-radius: 0px;
+                object-fit: contain;
+            }
+        }
+    }
+    .title{
+        direction: rtl;
+        text-align: right;
+        font-family: vazir_medium;
+        font-size: 10px;
+       a{
+           color: rgb(53, 69, 156);
+       } 
+    }
+    
+    .sub-title{
+        div{
+            direction: rtl;
+            display: flex;
+        }
+    }
+    .first-box{
+        cursor:auto;
+        background-color: #ffffff;
+        border-radius: 15px;
+        margin-top: -25px;
+        position: relative;
+        .card-content{
+            padding:20px;
+            max-height: 170px;
+            font-family: vazir_light;
+            text-align: justify;
+            p{
+                font-size: 10px;
+                max-height: 45px;
+                overflow: hidden;
+            }
+            .course-level{
+                // color: red;
+                position: absolute;
+                display: flex;
+                padding-left:30px;
+                padding-top:15px;
+                .level{
+                    position: relative;
+                    margin-left:37px;
+                    margin-top: -5px;
+                }
+            }
+            .course-price{
+                min-height:70px;
+                padding-top:10px;
+
+            }
+            .course-lenght{
+                padding: 0;
+                margin-top: 2px !important;
+            }
+            .course-level-biginner{
+                direction: ltr;
+                text-align: left;
+                span{
+                    min-width:5px;
+                    min-height:13px;
+                    // margin-bottom:0px !important;
+                    position: absolute;
+                    border-radius: 2px;
+                }
+                #one{
+                    background-color: rgb(36, 197, 36);
+                    margin-left:5px;
+                }
+                #tow{
+                    background-color: rgb(84, 148, 84);
+                    margin-left:15px;
+                }
+                #three{
+                    background-color: gray;
+                    margin-left:25px;
+                }
+            }
+            .course-level-intermediate{
+                    direction: ltr;
+                    text-align: left;
+                span{
+                    min-width:5px;
+                    min-height:13px;
+                    margin-bottom:5px;
+                    position: absolute;
+                    border-radius: 2px;
+                }
+                #one{
+                    background-color: rgb(15, 127, 202);
+                    margin-left:5px;
+                }
+                #tow{
+                    background-color: rgb(75, 149, 199);
+                    margin-left:15px;
+                }
+                #three{
+                    background-color: gray;
+                    margin-left:25px;
+                }
+                
+            }
+            .course-level-advanced{
+                direction: ltr;
+                text-align: left;
+                span{
+                    min-width:5px;
+                    min-height:13px;
+                    margin-bottom:5px;
+                    position: absolute;
+                    border-radius: 2px;
+                }
+                #one{
+                    background-color:#ee6d93;
+                    margin-left:5px;
+                }
+                #tow{
+                    background-color:#ee6d93;
+                    margin-left:15px;
+                }
+                #three{
+                    background-color:#ee6d93;
+                    margin-left:25px;
+                }
+            }
+            // .short-description{
+            //     display: inline-block;
+            //     width: 380px;
+            //     white-space: nowrap;
+            //     overflow: hidden !important;
+            //     text-overflow: ellipsis;
+            // }
+        }
+    }
+    
+    .card-action{
+            font-family: vazir_light;
+            justify-content: center !important;
+           
+    }
+    .tags{
+        padding: 0px !important;
+        .tag-item{
+            background-color: rgb(218, 218, 218);
+            margin:0px;
+            padding: 0px;
+        }
+    }
+    .article-info{
+        .article-infoCounts{
+            font-family: vazir-light;
+            padding-top: 2px;
+            margin-left: 10px;
+        }
+    }
+}
+.tag-box{
+    margin-top: 1px;
+    p{
+        font-size: 12px;
+        color:rgb(32, 30, 30) !important;
+    } 
+    router-link{
+    text-decoration: none;
+    }
+}
+.card:hover{
+    .box-cover{
+        width: 100%;
+        max-height: 300px;
+        img{
+            margin-right: 0px;
+            width: 100%;
+            height: 175px;
+            border :none;
+            border-radius: 0px;
+            object-fit: cover;
+            }
+        }
+} 
+}
 </style>

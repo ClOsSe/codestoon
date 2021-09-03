@@ -12,8 +12,8 @@
         </div>
       </div>
       <div>
-        <div class="category center row col-12">
-          <div class="center col-4" v-for="(item , index) in commingSoon" :key="index">
+        <div class="category center row col-12 ">
+          <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in commingSoon" :key="index">
           <span><Card class="" :cardInfo="item"/></span>
           </div>
         </div>
@@ -33,7 +33,7 @@
       </div>
       <div>
         <div class="category center row col-12">
-          <div class="center col-4" v-for="(item , index) in category" :key="index">
+          <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in category" :key="index">
           <span><Card class="" :cardInfo="item"/></span>
           </div>
         </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="category center row col-12">
-        <div class="center col-4" v-for="(item , index) in courses" :key="index">
+        <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in courses" :key="index">
           <span><Card :cardInfo="item"/></span>
         </div>
       </div>
@@ -90,7 +90,7 @@
         <Title class="text-h5" Title="آخرین مقالات" />
         <div class="row col-12 center">
           <div class="category center row col-12">
-            <div class="center col-4" v-for="(item , index) in articles" :key="index">
+            <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in articles" :key="index">
               <span><Card :cardInfo="item"/></span>
             </div>
           </div>
