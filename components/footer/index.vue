@@ -46,17 +46,17 @@
                     <ul class="d-flex center row col-12">
                         <li>
                             <a href="" target="_blank">
-                                <whatsapp />
+                                <whatsapp :size="innerWidth > 1600 ? 40 : 30" />
                             </a>
                         </li>
                         <li class="telegram">
                             <a href="" target="_blank">
-                                <telegram  />
+                                <telegram :size="innerWidth > 1600 ? 40 : 30" />
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank">
-                                <instagram  />
+                                <instagram :size="innerWidth > 1600 ? 40 : 30" />
                             </a>
                         </li>
                     </ul>
@@ -76,64 +76,130 @@ export default {
     },
     data(){
         return{
+            innerWidth: 0,
             email:'email@gmail.com',
             cel:'09121234567',
             address:'ادرس',
             rights:'تمامی حقوق مادی و معنوی این سایت متعلق به کدستون می باشد و هرگونه کپی برداری غیرقانونی محسوب خواهد شد'
         }
-    } 
+    },
+    mounted(){
+        this.innerWidth =  window.innerWidth
+    }
 }
 </script>
 <style lang="scss" scoped>
-.footer-body{
-    background-image: radial-gradient(circle at 1% 1%,#328bf2,#1644ad);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: auto;
-    overflow: hidden;
-    position: relative;
-    .first-row{
-        min-height: 280px;
-        .title{
+@media only screen  and (min-width: 1601px) {
+       .footer-body{
+        background-image: radial-gradient(circle at 1% 1%,#328bf2,#1644ad);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        overflow: hidden;
+        position: relative;
+        .first-row{
+            min-height: 300px;
+            .title{
+                color:rgb(251, 249, 249);
+                line-height: normal;
+            }
+        }
+        .sec-row{
+            min-height: 346px;
+            padding: 50px;
+            .column-1{
+                padding: 20px;
+                h4{
+                    padding: 5px;
+                    text-align: right;
+                    color:rgb(251, 249, 249);
+                    font-size: 22px;
+                    line-height: 1.5;
+                }
+            }
+            .column-2{
+                h2,p,ul{
+                    line-height: 1.5;
+                    font-size: 20px;
+                    padding: 10px;
+                    color:rgb(251, 249, 249);
+                }
+                ul>li{
+                    padding: 25px;
+                    margin-right: 15px;
+                }
+                ul{
+                    a{
+                        color: white;
+                    }
+                    .telegram{
+                        transform: rotate(-40deg);
+                    }
+                }
+                
+            }
+        }
+        .rights{
+            padding: 10px;
             color:rgb(251, 249, 249);
-              line-height: normal;
+            p{
+                font-size: 20px;
+            }
+
         }
+    
     }
-    .sec-row{
-        min-height: 326px;
-        padding: 50px;
-        .column-1{
+}
+@media only screen  and (max-width: 1600px) {
+    .footer-body{
+        background-image: radial-gradient(circle at 1% 1%,#328bf2,#1644ad);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        overflow: hidden;
+        position: relative;
+        .first-row{
+            min-height: 280px;
+            .title{
+                color:rgb(251, 249, 249);
+                line-height: normal;
+            }
+        }
+        .sec-row{
+            min-height: 326px;
+            padding: 50px;
+            .column-1{
+                padding: 20px;
+                h4{
+                    padding: 5px;
+                    text-align: right;
+                    color:rgb(251, 249, 249);
+                }
+            }
+            .column-2{
+                h2,p,ul{
+                    padding: 10px;
+                    color:rgb(251, 249, 249);
+                }
+                ul>li{
+                    padding: 5px;
+                    margin-right: 15px;
+                }
+                ul{
+                    a{
+                        color: white;
+                    }
+                    .telegram{
+                        transform: rotate(-40deg);
+                    }
+                }
+                
+            }
+        }
+        .rights{
             padding: 20px;
-            h4{
-                padding: 5px;
-                text-align: right;
-                color:rgb(251, 249, 249);
-            }
-        }
-        .column-2{
-            h2,p,ul{
-                padding: 10px;
-                color:rgb(251, 249, 249);
-            }
-            ul>li{
-                padding: 5px;
-                margin-right: 15px;
-            }
-            ul{
-                a{
-                    color: white;
-                }
-                .telegram{
-                    transform: rotate(-40deg);
-                }
-            }
-            
+            color:rgb(251, 249, 249);
         }
     }
-    .rights{
-        padding: 20px;
-        color:rgb(251, 249, 249);
-    }
-   
 }
 </style>
