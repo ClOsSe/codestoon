@@ -27,8 +27,18 @@ export default {
     padding: 10px !important;
     margin: 15px !important;
     margin-top: 25px !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
     font-family: vazir_bold;
+
+}
+}
+@media only screen  and (max-width: 600px){
+.title{
+    padding: 10px !important;
+    margin: 15px !important;
+    margin-top: 25px !important;
+    font-size: 10px !important;
+    font-family: vazir_bold !important;
 
 }
 }

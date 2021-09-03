@@ -3,10 +3,10 @@
         <div class="center first-row row col-12">
             <div class="center row col-12">
                 <div class="col-12 row center">
-                <h3 class="title text-center vazir-bold text-h12 col-6">برای دریافت آخرین اخبار و اطلاع از کدهای تخفیف در خبرنامه ما عضو شوید</h3>
+                <h3 class="title text-center vazir-bold text-h12 col-6 col-992-6 col-768-6 col-576-10">برای دریافت آخرین اخبار و اطلاع از کدهای تخفیف در خبرنامه ما عضو شوید</h3>
                 </div>
                 <div class="center row col-12">
-                    <Subscribe class="col-4"></Subscribe>
+                    <Subscribe class="col-4 col-992-6 col-768-6 col-576-11"></Subscribe>
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@ export default {
             }
         }
         .sec-row{
-            min-height: 346px;
+            // min-height: 346px;
             padding: 50px;
             .column-1{
                 padding: 20px;
@@ -256,6 +256,65 @@ export default {
             padding: 20px;
             color:rgb(251, 249, 249);
             font-size: 10px;
+        }
+    }
+}
+@media only screen  and (max-width: 767px){
+    .footer-body{
+        background-image: radial-gradient(circle at 1% 1%,#328bf2,#1644ad);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        overflow: hidden;
+        position: relative;
+        .first-row{
+            min-height: 120px;
+            .title{
+                color:rgb(251, 249, 249);
+                line-height: normal;
+                font-size: 12px !important;
+            }
+        }
+        .sec-row{
+            padding: 10px;
+            .column-1{
+                padding: 10px;
+                width: 100%;
+                h4{
+                    font-size: 10px;
+                    padding: 5px;
+                    text-align: right;
+                    color:rgb(251, 249, 249);
+                }
+            }
+            .column-2{
+                width: 100%;
+
+                h2,p,ul{
+                    padding: 10px;
+                    color:rgb(251, 249, 249);
+                    font-size: 10px;
+                }
+                ul>li{
+                    padding: 0px;
+                    margin-right: 15px;
+                }
+                ul{
+                    a{
+                        color: white;
+                    }
+                    .telegram{
+                        transform: rotate(-40deg);
+                    }
+                }
+                
+            }
+        }
+        .rights{
+            padding: 20px;
+            color:rgb(251, 249, 249);
+            font-size: 8px;
+            text-align:center;
         }
     }
 }
