@@ -153,6 +153,66 @@ export default {
     
 }
 }
+@media (min-width: 600px) and (max-width:768px){
+    .box{
+        width: 100%;
+        .card-recomended{
+            border: 1px solid #448aff;
+        }
+        .card{
+            border-radius: 17px;
+            margin: 5px;
+            max-width: 320px;
+            .title{
+            padding-top: 0px;
+            font-size: 8px;
+            width: 150px;
+            }
+            .price{
+                color:#448aff;
+                // padding: 8px;
+                font-size: 10px;
+                p{
+                    padding: 0px;
+                    font-size: 10px;
+                }
+                span{
+                    font-size:10px
+                }
+            }
+            .cycle{
+                color:black;
+            }
+            .image{
+                img{
+                    width: 105px;
+                    height: 75px;;
+                }        
+            }
+            .action-recomended-true{
+                .button{
+                    border-radius:20px;
+                    font-size: 12px;
+                }
+            }
+            .action-recomended-false{
+                color:black;
+                .button{
+                    font-size: 12px;
+                }
+            }
+            .action{
+                margin-top: 10px;
+            }
+            .description{
+            p{
+                font-size:10px;
+                line-height: 1.4;
+            }
+        }
+        }
+    }
+}
 
 
 </style>

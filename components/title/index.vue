@@ -22,6 +22,16 @@ export default {
         max-width: 1600px !important;
     }
 }
+@media (min-width: 600px) and (max-width:768px){
+.title{
+    padding: 10px !important;
+    margin: 15px !important;
+    margin-top: 25px !important;
+    font-size: 12px !important;
+    font-family: vazir_bold;
+
+}
+}
 .title{
     padding: 20px;
     margin: 25px;

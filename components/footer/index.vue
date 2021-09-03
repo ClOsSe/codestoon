@@ -202,4 +202,61 @@ export default {
         }
     }
 }
+@media (min-width: 768px) and (max-width:960px){
+
+    .footer-body{
+        background-image: radial-gradient(circle at 1% 1%,#328bf2,#1644ad);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        overflow: hidden;
+        position: relative;
+        .first-row{
+            min-height: 230px;
+            .title{
+                color:rgb(251, 249, 249);
+                line-height: normal;
+                font-size: 15px !important;
+            }
+        }
+        .sec-row{
+            min-height: 276px;
+            padding: 50px;
+            .column-1{
+                padding: 10px;
+                h4{
+                    font-size: 14px;
+                    padding: 5px;
+                    text-align: right;
+                    color:rgb(251, 249, 249);
+                }
+            }
+            .column-2{
+                h2,p,ul{
+                    padding: 10px;
+                    color:rgb(251, 249, 249);
+                    font-size: 12px;
+                }
+                ul>li{
+                    padding: 0px;
+                    margin-right: 15px;
+                }
+                ul{
+                    a{
+                        color: white;
+                    }
+                    .telegram{
+                        transform: rotate(-40deg);
+                    }
+                }
+                
+            }
+        }
+        .rights{
+            padding: 20px;
+            color:rgb(251, 249, 249);
+            font-size: 10px;
+        }
+    }
+}
 </style>

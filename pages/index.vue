@@ -13,7 +13,7 @@
       </div>
       <div>
         <div class="category center row col-12 ">
-          <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in commingSoon" :key="index">
+          <div class="center col-4 col-992-6 col-768-6 col-576-12" v-for="(item , index) in commingSoon" :key="index">
           <span><Card class="" :cardInfo="item"/></span>
           </div>
         </div>
@@ -33,7 +33,7 @@
       </div>
       <div>
         <div class="category center row col-12">
-          <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in category" :key="index">
+          <div class="center col-4 col-992-6 col-768-6 col-576-12" v-for="(item , index) in category" :key="index">
           <span><Card class="" :cardInfo="item"/></span>
           </div>
         </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="category center row col-12">
-        <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in courses" :key="index">
+        <div class="center col-4 col-992-6 col-768-6 col-576-12" v-for="(item , index) in courses" :key="index">
           <span><Card :cardInfo="item"/></span>
         </div>
       </div>
@@ -90,7 +90,7 @@
         <Title class="text-h5" Title="آخرین مقالات" />
         <div class="row col-12 center">
           <div class="category center row col-12">
-            <div class="center col-4 col-992-6 col-768-6" v-for="(item , index) in articles" :key="index">
+            <div class="center col-4 col-992-6 col-768-6 col-576-12" v-for="(item , index) in articles" :key="index">
               <span><Card :cardInfo="item"/></span>
             </div>
           </div>
@@ -405,6 +405,19 @@ export default {
     .category{
         max-width: 1600px;
     }
+}
+@media (min-width: 600px) and (max-width:768px){
+  .plans{
+    text-align:justify;
+    
+    .plans-description{
+      padding: 2px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      color: gray;
+      font-size:12px;
+    }
+  }
 }
 .category{
   // max-width: 1600px;
