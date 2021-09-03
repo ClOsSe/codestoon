@@ -36,11 +36,21 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media only screen  and (min-width: 1601px) {
+    .row-with-title{
+        max-width: 2000px;
+    }
+}
+@media only screen  and (max-width: 1601px) {
+    .row-with-title{
+        max-width: 1600px;
+    }
+}
 .row-with-title{
     width: 100%;
     overflow: hidden;
     position: relative;
-    max-width: 1600px;
+    // max-width: 1600px;
     .pictire-and-info-box{
         display: flex;
         picture{

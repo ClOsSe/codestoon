@@ -48,6 +48,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media only screen  and (min-width: 1601px) {
+    .header-menue{
+        max-width: 2000px;
+    }
+}
+@media only screen  and (max-width: 1601px) {
+    .header-menue{
+        max-width: 1600px;
+    }
+}
 .banner{
     max-height: 70px;
     width: 100%;
@@ -59,7 +69,6 @@ export default {
     max-height: 67px;
     width: 100%;
     display: flex;
-    max-width: 1600px;
     left:0;
     right:0;
     margin:auto;

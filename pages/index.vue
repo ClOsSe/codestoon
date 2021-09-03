@@ -4,7 +4,7 @@
     <div style="margin-top:-70px;z-index:-1">
       <TitleDescription />
     </div>
-    <!-- sec fold show category -->
+    <!-- sec fold show comming soon -->
     <div class="background-lemon center row col-12">
       <div class="row col-12" >
         <div class="center col-12 row">
@@ -189,25 +189,46 @@ export default {
         }
       ],
       commingSoon:[
-         { 
+          { 
           id:0,
-          imageUrl:'/backend.jpg',
-          title:'برنامه نویسی وب فرانت-اند',
-          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          imageUrl:'/php.jpg',
+          title:'آموزش 0 تا 100 php',
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره php را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           CommingSoon:'true',
         },
-         { 
+        { 
           id:1,
-          imageUrl:'/front.jpg',
-          title:'برنامه نویسی وب فرانت-اند',
-          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          imageUrl:'/python.jpg',
+          title:'آموزش 0 تا 100 python',
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره python را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           CommingSoon:'true',
         },
-         { 
+        { 
           id:2,
-          imageUrl:'/database.jpg',
-          title:'برنامه نویسی وب فرانت-اند',
-          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          imageUrl:'/ts.png',
+          title:'آموزش 0 تا 100 TypeScript',
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره TypeScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          CommingSoon:'true',
+        },
+        { 
+          id:3,
+          imageUrl:'/javascript.png',
+          title:'آموزش 0 تا 100 JavaScript',
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره JavaScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          CommingSoon:'true',
+        },
+        { 
+          id:4,
+          imageUrl:'/quasar.png',
+          title:'آموزش 0 تا 100 quasar',
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره quasar را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
+          CommingSoon:'true',
+        },
+        { 
+          id:5,
+          imageUrl:'/vue.png',
+          title:'آموزش 0 تا 100 vue',
+          shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           CommingSoon:'true',
         },
       ],
@@ -375,8 +396,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media only screen  and (min-width: 1601px) {
+    .category{
+        max-width: 1900px;
+    }
+}
+@media only screen  and (max-width: 1601px) {
+    .category{
+        max-width: 1600px;
+    }
+}
 .category{
-  max-width: 1600px;
+  // max-width: 1600px;
   span{
     padding: 20px;
   }
