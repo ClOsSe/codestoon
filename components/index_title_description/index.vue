@@ -150,27 +150,29 @@ export default {
 
 }
 @media (min-width: 768px) and (max-width:960px){
+    .main-title{
+        .title-text{
+            font-size: 20px !important;
+            max-width: 70%;
+        }
+    }
     .info-box{
         width: 300px !important;
         height: 100%;
         .card{
-            margin-top: -50px;
-            h1{
-                font-size: 24px;
-            }
-            p{
-                font-size: 16px;
-                font-family: vazir_thin !important;
-            }
+            font-size:12px;
             .search{
-                .search-input{
-                    max-width: 150px;
+                .search-input::placeholder {
+                    font-size: 15px;
                 }
             }
         }
     }
 }
 @media  (max-width:768px){
+    .main-title{
+         display: none;
+        }
     .info-box{
         width: 100% !important;
         height: 100%;
