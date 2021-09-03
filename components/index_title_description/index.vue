@@ -39,6 +39,22 @@ export default {
 @media only screen  and (min-width: 1601px) {
     .row-with-title{
         max-width: 2000px;
+        .main-title{
+            .title-text{
+                max-width: 80%;
+            }
+        }
+        .info-box{
+            width: 700px !important;   
+            .card{
+                font-size:24px;
+                .search{
+                    .search-input::placeholder {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen  and (max-width: 1601px) {

@@ -22,7 +22,7 @@
                 <!-- <div class="md-layout-item   md-size-25"> -->
                 <!-- </div> -->
                     <md-button class="login md-dense md-default">ورود / ثبت‌نام</md-button>
-                    <Cart class="cart center" />
+                    <cart  :size="innerWidth > 1600 ? 40 : 30" />
             </div>
             </div>
         </div>
@@ -38,12 +38,16 @@ export default {
     data(){
         
         return{
+            innerWidth:0,
             banner:{
                 IsBannerExist:true,
                 bannerSrc:'/banner.png',
                 bannerAlt:'banner'
             },
         }
+    },
+    mounted(){
+        this.innerWidth =  window.innerWidth
     }
 }
 </script>
@@ -51,6 +55,18 @@ export default {
 @media only screen  and (min-width: 1601px) {
     .header-menue{
         max-width: 2000px;
+        ul{
+            li{
+            .nuxt-link{
+                font-size: 24px !important;
+            }
+        }
+    }
+        .login-parent{
+            .login{
+                font-size: 24px !important;
+            }
+        }
     }
 }
 @media only screen  and (max-width: 1601px) {
