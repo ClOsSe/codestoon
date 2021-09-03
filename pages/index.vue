@@ -8,6 +8,26 @@
     <div class="background-lemon center row col-12">
       <div class="row col-12" >
         <div class="center col-12 row">
+          <Title  Title="دوره‌های در  دست ساخت" />
+        </div>
+      </div>
+      <div>
+        <div class="category center row col-12">
+          <div class="center col-4" v-for="(item , index) in commingSoon" :key="index">
+          <span><Card class="" :cardInfo="item"/></span>
+          </div>
+        </div>
+        <div class="row col-12">
+          <ShowMore routeName="category"></ShowMore>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- sec fold show category -->
+    <div class="background-lemon center row col-12">
+      <div class="row col-12" >
+        <div class="center col-12 row">
           <Title  Title="دسته‌بندی‌ها" />
         </div>
       </div>
@@ -109,7 +129,7 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره php را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
-          level:"ADVANCED",
+          level:"advanced",
           price:150000,
         },
         { 
@@ -120,7 +140,7 @@ export default {
           topics:'20',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره python را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
-          level:"BIGINNER",
+          level:"biginner",
           price:50000,
         },
         { 
@@ -131,7 +151,7 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره TypeScript را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
-          level:"ADVANCED",
+          level:"advanced",
           price:100000,
         },
         { 
@@ -153,7 +173,7 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره quasar را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
-          level:"ADVANCED",
+          level:"biginner",
           price:300000,
         },
         { 
@@ -164,9 +184,32 @@ export default {
           topics:'50',
           shortDescription:'شما می‌توانید با خرید این دوره از 0 تا 100 دوره vue را به راحتی یاد بگیرید و فقط و فقط با خرید این دوره مشکل عدم وجود یک بسته عالی را برای همیشه برطرف کنید',
           isCourse:true,
-          level:"INTERMEDIATE",
+          level:"medium",
           price:300000,
         }
+      ],
+      commingSoon:[
+         { 
+          id:0,
+          imageUrl:'/backend.jpg',
+          title:'برنامه نویسی وب فرانت-اند',
+          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          CommingSoon:'true',
+        },
+         { 
+          id:1,
+          imageUrl:'/front.jpg',
+          title:'برنامه نویسی وب فرانت-اند',
+          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          CommingSoon:'true',
+        },
+         { 
+          id:2,
+          imageUrl:'/database.jpg',
+          title:'برنامه نویسی وب فرانت-اند',
+          shortDescription:'تمامی دوره های مربوط به طراحی پایگاه داده و بک اند سایت را در این قسمت پیدا کنید',
+          CommingSoon:'true',
+        },
       ],
       category:[
         { 

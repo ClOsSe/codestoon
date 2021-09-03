@@ -31,16 +31,21 @@
               <!-- </md-card-header> -->
                 <!-- description -->
                 <p class="short-description" :class="cardInfo.isCategory ? 'short-description-category' : cardInfo.isCourse ? 'short-description-course' : '' " v-if="cardInfo.shortDescription">{{cardInfo.shortDescription}}</p>
-                <div v-if="cardInfo.isCourse" class="course-level row col-12" :class="cardInfo.level =='BIGINNER' ? 'course-level-biginner' : cardInfo.level == 'ADVANCED' ? 'course-level-advanced' :'course-level-intermediate' " >
+                <div v-if="cardInfo.isCourse" class="course-level row col-12" :class="cardInfo.level =='biginner' ? 'course-level-biginner' : cardInfo.level == 'advanced' ? 'course-level-advanced' :'course-level-intermediate' " >
                     <span id="one"></span>
                     <span id="tow"></span>
                     <span id="three"></span>
-                    <p class="level">
-                    {{cardInfo.level}}
-                    </p>
+                    <p class="level" v-if="cardInfo.level == 'advanced'">پیشرفته</p>
+                    <p class="level" v-if="cardInfo.level == 'biginner'">مبتدی</p>
+                    <p class="level" v-if="cardInfo.level == 'medium'">متوسط</p>
                 </div>
                     <p v-if="cardInfo.isCourse" class="course-price">قیمت : {{cardInfo.price}} تومان</p>
               </md-card-content>
+              <!-- <md-card-content  > -->
+                <md-card-actions v-if="cardInfo.CommingSoon" class="card-action md-alignment-center-center vazir-light">
+                    <md-button style="margin-top:15px" class="md-button btn-bye md-primary md-dense md-raised col-11">نمایش جزئیات</md-button>
+                </md-card-actions>
+              <!-- </md-card-content> -->
               <!-- tags if its article this row will display -->
               <md-card-content v-if="cardInfo.tags">
                   <div class="row flex col-12 tags">
@@ -254,10 +259,11 @@ export default {
     }
     
     .card-action{
-            font-family: vazir_light;
+        font-family: vazir_light;
             justify-content: center !important;
             .md-button{
-                font-size: 20px;
+                height: 40px !important;
+                font-size: 22px;
             }
     }
     .tags{

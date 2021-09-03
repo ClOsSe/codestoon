@@ -31,6 +31,9 @@ md-input{
         margin-top: -25px !important;
         font-family: vazir_light;
         font-size: 17px;
-        background-color: rgba(21, 219, 209, 0.698) !important;
+        // background-color: rgba(21, 219, 209, 0.698) !important;
+        background-color: rgb(45 128 231) !important;
+        color:white;
+        font-family:vazir_light;
     }
 </style>

@@ -19,9 +19,9 @@
                 </ul>
             </div>
             <div class="md-layout-item login-parent md-layout md-gutter md-alignment-center-right">
-                <div class="md-layout-item  center md-size-25">
+                <!-- <div class="md-layout-item   md-size-25"> -->
+                <!-- </div> -->
                     <md-button class="login md-dense md-default">ورود / ثبت‌نام</md-button>
-                </div>
                     <Cart class="cart center" />
             </div>
             </div>
@@ -88,7 +88,7 @@ export default {
         }
     }
     .login-parent{
-        margin-left: 20px;
+        margin-left: 30px;
         .login{
             color:rgb(251, 249, 249);
             font-family: vazir_light;
